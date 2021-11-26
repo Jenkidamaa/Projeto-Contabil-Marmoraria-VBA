@@ -4,7 +4,7 @@ Begin {C62A69F0-16DC-11CE-9E98-00AA00574A4F} tabela
    ClientLeft      =   120
    ClientTop       =   465
    ClientWidth     =   15225
-   OleObjectBlob   =   "Tabela para criaÁ„o de orÁamentos.frx":0000
+   OleObjectBlob   =   "Tabela para cria√ß√£o de or√ßamentos.frx":0000
    StartUpPosition =   1  'CenterOwner
 End
 Attribute VB_Name = "tabela"
@@ -12,9 +12,6 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
-
-
-
 
 Private Sub acabamento_Change()
         
@@ -27,9 +24,7 @@ ElseIf acabamento.Value = "Meia Esquadria Importados" Then
     vm = " "
     vm = Int(120)
     
-         
 End If
-        
         
 End Sub
 
@@ -38,15 +33,15 @@ Private Sub LOC_change()
 If LOC.Value = "banheiro" Then
         trabalho.Clear
         
-        trabalho.AddItem "LavatÛrio"
+        trabalho.AddItem "Lavat√≥rio"
         trabalho.AddItem "Espelho"
         trabalho.AddItem "Cuba esculpida"
         trabalho.AddItem "Nicho"
         trabalho.AddItem "Porta Shampoo"
         
-        trabalho.AddItem "LavatÛrio e espelho"
-        trabalho.AddItem "LavatÛrio e cuba esculpida"
-        trabalho.AddItem "LavatÛrio e nicho"
+        trabalho.AddItem "Lavat√≥rio e espelho"
+        trabalho.AddItem "Lavat√≥rio e cuba esculpida"
+        trabalho.AddItem "Lavat√≥rio e nicho"
         
         trabalho.AddItem "Espelho e cuba esculpida"
         trabalho.AddItem "Espelho e nicho"
@@ -58,48 +53,48 @@ ElseIf LOC.Value = "cozinha" Then
         
         
         trabalho.AddItem "Pia"
-        trabalho.AddItem "Balc„o"
+        trabalho.AddItem "Balc√£o"
         trabalho.AddItem "Espelhos"
-        trabalho.AddItem "PÈ"
+        trabalho.AddItem "P√©"
         trabalho.AddItem "Calha Umida"
         
         
-        trabalho.AddItem "Pia e balc„o"
+        trabalho.AddItem "Pia e balc√£o"
         trabalho.AddItem "Pia e espelho"
-        trabalho.AddItem "Pia e PÈ"
+        trabalho.AddItem "Pia e P√©"
         
-        trabalho.AddItem "Balc„o e espelho"
-        trabalho.AddItem "Balc„o e pÈ"
+        trabalho.AddItem "Balc√£o e espelho"
+        trabalho.AddItem "Balc√£o e p√©"
         
-        trabalho.AddItem "Pia, balc„o e Espelhos"
+        trabalho.AddItem "Pia, balc√£o e Espelhos"
         
-        trabalho.AddItem "Pia, balc„o, espelhos e pÈ"
+        trabalho.AddItem "Pia, balc√£o, espelhos e p√©"
         
-        trabalho.AddItem "Pia, balc„o, espelhos, pÈ e ilha"
+        trabalho.AddItem "Pia, balc√£o, espelhos, p√© e ilha"
         
         
-ElseIf LOC.Value = "¡rea Gourmet" Then
+ElseIf LOC.Value = "√Årea Gourmet" Then
         trabalho.Clear
         
         trabalho.AddItem "Pia"
-        trabalho.AddItem "Balc„o"
+        trabalho.AddItem "Balc√£o"
         trabalho.AddItem "Espelhos"
-        trabalho.AddItem "PÈ"
+        trabalho.AddItem "P√©"
         trabalho.AddItem "Calha Umida"
         
         
-        trabalho.AddItem "Pia e balc„o"
+        trabalho.AddItem "Pia e balc√£o"
         trabalho.AddItem "Pia e espelho"
-        trabalho.AddItem "Pia e PÈ"
+        trabalho.AddItem "Pia e P√©"
         
-        trabalho.AddItem "Balc„o e espelho"
-        trabalho.AddItem "Balc„o e pÈ"
+        trabalho.AddItem "Balc√£o e espelho"
+        trabalho.AddItem "Balc√£o e p√©"
         
-        trabalho.AddItem "Pia, balc„o e Espelhos"
+        trabalho.AddItem "Pia, balc√£o e Espelhos"
         
-        trabalho.AddItem "Pia, balc„o, espelhos e pÈ"
+        trabalho.AddItem "Pia, balc√£o, espelhos e p√©"
         
-        trabalho.AddItem "Pia, balc„o, espelhos, pÈ e ilha"
+        trabalho.AddItem "Pia, balc√£o, espelhos, p√© e ilha"
     
     
 ElseIf LOC.Value = "casa" Then
@@ -132,11 +127,11 @@ ElseIf material.Value = "BRANCO PRIME" Then
     valor_pedra = ""
     valor_pedra = "950,00"
     
-ElseIf material.Value = "BRANCO PARAN¡" Then
+ElseIf material.Value = "BRANCO PARAN√Å" Then
     valor_pedra = ""
     valor_pedra = "1350,00"
 
-ElseIf material.Value = "GRANITO VERDE P…ROLA" Then
+ElseIf material.Value = "GRANITO VERDE P√âROLA" Then
     valor_pedra = ""
     valor_pedra = "290,00"
 
@@ -161,7 +156,7 @@ ElseIf material.Value = "MARROM ABSOLUTO" Then
     valor_pedra = ""
     
     
-ElseIf material.Value = "MARROM CAF…" Then
+ElseIf material.Value = "MARROM CAF√â" Then
     valor_pedra = ""
     
 
@@ -171,16 +166,16 @@ ElseIf material.Value = "CREMA MOCA" Then
     valor_pedra = 1300#
     
     
-ElseIf material.Value = "GRANITO PRETO S¬O GABRIEL" Then
+ElseIf material.Value = "GRANITO PRETO S√ÇO GABRIEL" Then
     valor_pedra = ""
     valor_pedra = 480#
     
     
-ElseIf material.Value = "GRANITO PRETO S√O GABRIEL ESCOVADO" Then
+ElseIf material.Value = "GRANITO PRETO S√ÉO GABRIEL ESCOVADO" Then
     valor_pedra = ""
     valor_pedra = "490,00"
     
-ElseIf material.Value = "M¡RMORE TRAVERTINO" Then
+ElseIf material.Value = "M√ÅRMORE TRAVERTINO" Then
     valor_pedra = "350,00"
     
     
@@ -188,7 +183,7 @@ ElseIf material.Value = "VERDE CANDEIAS" Then
     valor_pedra = ""
     
     
-ElseIf material.Value = "VERDE CURA«OL" Then
+ElseIf material.Value = "VERDE CURA√áOL" Then
     valor_pedra = ""
     valor_pedra = "1800,00"
     
@@ -207,12 +202,12 @@ End If
 End Sub
 
 Private Sub UserForm_ACTIVATE()
-    Sheets("OR«AMENTO (2)").Select
+    Sheets("OR√áAMENTO (2)").Select
     
     
     'adicionar local
     
-    LOC.AddItem "¡rea Gourmet"
+    LOC.AddItem "√Årea Gourmet"
     LOC.AddItem "cozinha"
     LOC.AddItem "banheiro"
     LOC.AddItem "casa"
@@ -227,15 +222,15 @@ Private Sub UserForm_ACTIVATE()
     material.AddItem "GRANITO BRANCO SIENA"
     material.AddItem "CINZA PRIME"
     material.AddItem "CINZA CLEAN"
-    material.AddItem "M¡RMORE CREMA MOCA"
+    material.AddItem "M√ÅRMORE CREMA MOCA"
     material.AddItem "MARROM ABSOLUTO"
-    material.AddItem "MARROM CAF…"
-    material.AddItem "GRANITO PRETO S√O GABRIEL"
-    material.AddItem "GRANITO PRETO S√O GABRIEL ESCOVADO"
-    material.AddItem "M¡RMORE TRAVERTINO"
+    material.AddItem "MARROM CAF√â"
+    material.AddItem "GRANITO PRETO S√ÉO GABRIEL"
+    material.AddItem "GRANITO PRETO S√ÉO GABRIEL ESCOVADO"
+    material.AddItem "M√ÅRMORE TRAVERTINO"
     material.AddItem "VERDE CANDEIAS"
-    material.AddItem "VERDE CURA«OL"
-    material.AddItem "GRANITO VERDE P…ROLA"
+    material.AddItem "VERDE CURA√áOL"
+    material.AddItem "GRANITO VERDE P√âROLA"
     material.AddItem "GRANITO VERDE UBATUBA"
         
     'Montagem
@@ -245,7 +240,7 @@ Private Sub UserForm_ACTIVATE()
     
     'acabamento
     
-    acabamento.AddItem "M√O DE OBRA RETO SIMPLES"
+    acabamento.AddItem "M√ÉO DE OBRA RETO SIMPLES"
     acabamento.AddItem "RETO SIMPLES(TRAVERTINO)"
     acabamento.AddItem "RETO DUPLO"
     acabamento.AddItem "RETO DUPLO(TRAVERTINO)"
@@ -272,7 +267,7 @@ Private Sub adicionar_Click()
 Dim i As Integer
 Dim acum As Long
 
-Worksheets("OR«AMENTO (2)").Select
+Worksheets("OR√áAMENTO (2)").Select
     
     
     'inserir dados da tabela
@@ -290,7 +285,7 @@ Worksheets("OR«AMENTO (2)").Select
     Range("b24") = anotacao
     Range("f23") = valor_montagem
     
-    'limpar caixas de inserÁ„o de dados
+    'limpar caixas de inser√ß√£o de dados
     
     num_ta = ""
     LOC = ""
@@ -321,10 +316,8 @@ Else
         MsgBox ("Aguarde o salvamento em PDF e Excel")
         
         SalvarAba
-        fechar_aba_orÁamento
+        fechar_aba_or√ßamento
         Worksheets("MENU").Activate
-        
-        
         
         
 End If
