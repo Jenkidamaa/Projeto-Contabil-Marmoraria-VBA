@@ -1,4 +1,4 @@
-Attribute VB_Name = "Módulo1"
+Attribute VB_Name = "MÃ³dulo1"
 Sub salvar_()
 Attribute salvar_.VB_ProcData.VB_Invoke_Func = " \n14"
 '
@@ -20,7 +20,7 @@ Sub SALVAR_PDF()
         
         Dim arquivo As String
 
-        arquivo = "C:\Users\andreia limoli\Desktop\TRABALAHO ORÇAMENTOS\ORCAMENTOS PDF\" & Range("C5").Value & ".pdf"
+        arquivo = "C:\Users\Desktop\TRABALAHO ORÃ‡AMENTOS\ORCAMENTOS PDF\" & Range("C5").Value & ".pdf"
 
 
 
@@ -34,7 +34,7 @@ Sub SALVAR_EXCEL()
                        
         Dim arquivo1 As String
 
-        arquivo1 = "C:\Users\andreia limoli\Desktop\TRABALAHO ORÇAMENTOS\ORCAMENTOS EXCEL\" & Range("C5").Value & ".xlsx"
+        arquivo1 = "C:\Users\Desktop\TRABALAHO ORÃ‡AMENTOS\ORCAMENTOS EXCEL\" & Range("C5").Value & ".xlsx"
 
 
 
@@ -53,7 +53,7 @@ Application.ScreenUpdating = False
 'Impede que o Excel exiba alertas
 Application.DisplayAlerts = False
 
-'Seta uma variável para se referir a nova pasta de trabalho
+'Seta uma variÃ¡vel para se referir a nova pasta de trabalho
 Dim NovoWB As Workbook
 'Cria esta nova aba
 Set NovoWB = Workbooks.ADD(xlWBATWorksheet)
