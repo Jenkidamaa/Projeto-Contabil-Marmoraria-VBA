@@ -1,17 +1,6 @@
-VERSION 5.00
-Begin {C62A69F0-16DC-11CE-9E98-00AA00574A4F} tabela 
-   ClientHeight    =   8910
-   ClientLeft      =   120
-   ClientTop       =   465
-   ClientWidth     =   15225
-   OleObjectBlob   =   "Tabela para criação de orçamentos.frx":0000
-   StartUpPosition =   1  'CenterOwner
-End
-Attribute VB_Name = "tabela"
-Attribute VB_GlobalNameSpace = False
-Attribute VB_Creatable = False
-Attribute VB_PredeclaredId = True
-Attribute VB_Exposed = False
+
+
+
 
 Private Sub acabamento_Change()
         
@@ -24,7 +13,9 @@ ElseIf acabamento.Value = "Meia Esquadria Importados" Then
     vm = " "
     vm = Int(120)
     
+         
 End If
+        
         
 End Sub
 
@@ -201,7 +192,7 @@ End If
 
 End Sub
 
-Private Sub UserForm_ACTIVATE()
+Private Sub UserForm_Activate()
     Sheets("ORÇAMENTO (2)").Select
     
     
@@ -266,6 +257,9 @@ Private Sub adicionar_Click()
 
 Dim i As Integer
 Dim acum As Long
+Dim erro As Error
+
+
 
 Worksheets("ORÇAMENTO (2)").Select
     
@@ -317,7 +311,11 @@ Else
         
         SalvarAba
         fechar_aba_orçamento
-        Worksheets("MENU").Activate
+        
+        
+        BlocodeAbas.Show
+        
+        
         
         
 End If
