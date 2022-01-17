@@ -1,6 +1,4 @@
-Attribute VB_Name = "Módulo_Salvamentos"
 Sub salvar_()
-Attribute salvar_.VB_ProcData.VB_Invoke_Func = " \n14"
 '
 ' salvar_ Macro
 '
@@ -20,7 +18,7 @@ Sub SALVAR_PDF()
         
         Dim arquivo As String
 
-        arquivo = "C:\Users\andreia limoli\Desktop\TRABALAHO ORÇAMENTOS\ORCAMENTOS PDF\" & Range("C5").Value & ".pdf"
+        arquivo = "C:\Users\andreia limoli\Desktop\TRABALAHO ORÃ‡AMENTOS\ORCAMENTOS PDF\" & Range("C5").Value & ".pdf"
 
 
 
@@ -34,7 +32,7 @@ Sub SALVAR_EXCEL()
                        
         Dim arquivo1 As String
 
-        arquivo1 = "C:\Users\andreia limoli\Desktop\TRABALAHO ORÇAMENTOS\ORCAMENTOS EXCEL\" & Range("C5").Value & ".xlsx"
+        arquivo1 = "C:\Users\andreia limoli\Desktop\TRABALAHO ORÃ‡AMENTOS\ORCAMENTOS EXCEL\" & Range("C5").Value & ".xlsx"
 
 
 
@@ -53,10 +51,16 @@ Application.ScreenUpdating = False
 'Impede que o Excel exiba alertas
 Application.DisplayAlerts = False
 
-'Seta uma variável para se referir a nova pasta de trabalho
+'Seta uma variÃ¡vel para se referir a nova pasta de trabalho
 Dim NovoWB As Workbook
+Dim ultima_linha As Long
+Dim Total1 As Long, Total2 As Long
+
+
 'Cria esta nova aba
 Set NovoWB = Workbooks.ADD(xlWBATWorksheet)
+
+
 With NovoWB
 'Copia a aba atual para o novo arquivo, como a segunda aba
 
@@ -69,12 +73,14 @@ ThisWorkbook.ActiveSheet.Copy After:=.Worksheets(.Worksheets.Count)
 'Troque "Novo Arquivo" para um outro nome qualquer que preferir
 
 .Worksheets.Select
-
+ultima_linha = ActiveSheet.Range("D105810").End(xlUp)
+ActiveSheet.PageSetup.PrintArea = "$A$1:$E" & ultima_linha
 .SaveAs ThisWorkbook.Path & " " & Range("C5") & ".xlsx"
 'Fecha o novo arquivo
 'ActiveWorkbook.SaveAs Filename:="C:\Users\Carlos Isaque\Desktop\LOL\" & Range("C5") & ".xlsx"
+
 .Close True
-'Application.Sheets("ORÇAMENTO (2)").Delete
+'Application.Sheets("ORÃ‡AMENTO (2)").Delete
 
 
 
