@@ -14,14 +14,9 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 
-Private Sub Balanço_Click()
+Private Sub BalanÃ§o_Click()
     BlocodeAbas.Value = 6
 End Sub
-
-
-
-
-
 
 End Sub
 
@@ -41,25 +36,17 @@ Private Sub Caixa_Click()
     BlocodeAbas.Value = 4
 End Sub
 
-Private Sub Chamar_Orçamento_Click()
-    
-    
-    UserForm1.Show
-    
-    
+Private Sub Chamar_OrÃ§amento_Click()
+UserForm1.Show
 End Sub
 
 Private Sub CommandButton1_Click()
     Dim w As Workbook
-    
     w.Close
-
 End Sub
-
 
 Private Sub CommandButton2_Click()
     Dim w As Worksheet
-    
 End Sub
 
 Private Sub Controle_Click()
@@ -70,22 +57,7 @@ Private Sub Frame1_Click()
 
 End Sub
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Private Sub Orçamento_Click()
+Private Sub OrÃ§amento_Click()
     BlocodeAbas.Value = 1
 
 End Sub
@@ -95,7 +67,7 @@ Dim Arq As String
 
 With Application.FileDialog(msoFileDialogOpen)
     .InitialFileName = Application.DefaultFilePath & "\"
-    .Title = "Título"
+    .Title = "TÃ­tulo"
     .Filters.Clear
     .Filters.ADD "PDF Files", "*.pdf"
     .Show
@@ -113,10 +85,6 @@ Private Sub Recibos_Click()
     BlocodeAbas.Value = 3
 End Sub
 
-
-
-
-
 Private Sub UserForm_Initialize()
     Call AtualizaCaixaListagemRecibos
     Call AtualizaCaixaListagemCaixa
@@ -129,6 +97,4 @@ End Sub
 
 Private Sub Viewer1_OnDocumentLoaded()
     Dim Arq As Object
-    
-    
 End Sub
