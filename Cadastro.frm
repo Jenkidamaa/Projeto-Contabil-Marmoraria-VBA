@@ -1,16 +1,7 @@
-
-
-
-
 Private Sub btnadd_Click()
-
-
-    
     Dim resp As VbMsgBoxResult
     Dim resp1 As VbMsgBoxResult
-    Dim nome As String
-    
-    
+    Dim nome As String  
     
     resp1 = MsgBox("Adicionar Cadastro ao banco de dados", vbYesNo)
     resp = MsgBox("Proseguir para orçamento?", vbYesNo)
@@ -56,12 +47,8 @@ Private Sub btnadd_Click()
         Range("C7") = bairro
         Range("C8") = cidade
         Range("C9") = telefone
-        Range("C10") = email
-    
-
-        
-        
-    
+        Range("C10") = email   
+       
         resp2 = MsgBox("Fechar janela de usuarios", vbYesNo)
             
             If resp2 = vbYes Then
@@ -69,19 +56,10 @@ Private Sub btnadd_Click()
             Application.Quit
             
             
-            End If
-            
-        
-    
+            End If          
+           
     End If
     End If
-    
-    
-    
-    
-    
-    
-
 End Sub
 
 
@@ -108,9 +86,6 @@ End Sub
             
        ' End If
         
-
-
-
 
 Private Sub estado_Change()
     If estado.Value = "AC" Then
@@ -165,10 +140,6 @@ Private Sub estado_Change()
         testado = "Sergipe"
     ElseIf estado.Value = "DF" Then
         testado = "Distrito Federal"
-
-    
-    
-        
     
     End If
 End Sub
@@ -203,10 +174,6 @@ Private Sub UserForm_Activate()
     estado.AddItem "SP"
     estado.AddItem "SE"
     estado.AddItem "TO"
-    estado.AddItem "DF"
-    
-
-    
-    
+    estado.AddItem "DF"    
 End Sub
 
