@@ -3,6 +3,9 @@
 ![vba-logo-e1316640762831](https://user-images.githubusercontent.com/85850597/144149842-3e0c9b98-3db7-4382-95ec-1395bd1e50da.png)
 
 # Interface Grafica (Caixa de listagem) - userform __*BlocoDeAbas*__
+
+Essa caixa de listagem tras a interface gráfica do programa, nela temos 7 abas onde cada uma tera um escopo da parte administrativa __Menu, Orçamento, Cadastro Cliente, Recibo, Caixa, Controle e Balanço__.  
+
 ## Menu (Aba - 1)
 
 ![Aba menu - Sistema](https://user-images.githubusercontent.com/85850597/149810416-a23ac2d5-91fe-4f96-a228-66355bae0db2.jpg)
