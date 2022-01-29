@@ -258,6 +258,10 @@ Private Sub adicionar_Click()
 Dim i As Integer
 Dim acum As Long
 Dim erro As Error
+Dim ultima_linha_cel As Integer
+Dim Total1 As Long, Total2 As Long
+Dim Nome_cliente As String 'Nome que vai para a aba cadastro de orçamentos
+Dim planilha As Worksheet
 
 
 
@@ -308,19 +312,43 @@ If continuar = vbYes Then
 Else
         remove_tab1
         MsgBox ("Aguarde o salvamento em PDF e Excel")
+        Total1 = WorksheetFunction.SumIf(Range("B:B"), "VALOR TOTAL DESTE ORÇAMENTO")
+        Total2 = WorksheetFunction.SumIf(Range("B:B"), "VALOR FECHADO A VISTA")
+        Nome_cliente = Range("C5")
+        
+        
         
         SalvarAba
         fechar_aba_orçamento
+        Sheets("Lista Orçamentos").Activate
         
         
-        BlocodeAbas.Show
         
+        ultima_linha_cel = Cells(Rows.Count, 2).End(xlUp).Row
         
+        Worksheets("Lista Orçamentos").Cells(ultima_linha_cel + 1, 2).Value = Date
+        
+        Worksheets("Lista Orçamentos").Cells(ultima_linha_cel + 1, 3) = Nome_cliente
+        Worksheets("Lista Orçamentos").Cells(ultima_linha_cel + 1, 4) = Total1
+        Worksheets("Lista Orçamentos").Cells(ultima_linha_cel + 1, 5) = Total2
+        
+        'Selection.Range("C" & ultima_linha_cel).Value = Nome_cliente
+        'Selection.Range("D" & ultima_linha_cel).Value = Total1
+        'Selection.Range("E" & ultima_linha_cel).Value = Total2
+        
+
+        tabela.Hide
+        'Application.Sheets("ORÇAMENTO (2)").Delete
         
         
 End If
 
-    
+
+
+
+
+
+
 End Sub
 
 
