@@ -22,7 +22,6 @@ Private Sub btnadd_Click()
         Worksheets("CADASTRO").Cells(X + 1, 8) = estado
         Worksheets("CADASTRO").Cells(X + 1, 9) = email
         Worksheets("CADASTRO").Cells(X + 1, 10) = telefone
-        
         If resp = vbYes Then
             
             UserForm1.Hide
