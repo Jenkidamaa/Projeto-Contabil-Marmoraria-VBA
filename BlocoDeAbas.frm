@@ -20,9 +20,6 @@ End Sub
 
 End Sub
 
-Private Sub BlocodeAbas_Change()
-
-End Sub
 
 Private Sub Cadasstro_clientes_Click()
     BlocodeAbas.Value = 2
