@@ -19,8 +19,6 @@ Private Sub Balanço_Click()
 End Sub
 
 End Sub
-
-
 Private Sub Cadasstro_clientes_Click()
     BlocodeAbas.Value = 2
 End Sub
