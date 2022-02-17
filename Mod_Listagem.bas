@@ -1,22 +1,19 @@
 Attribute VB_Name = "Mod_Listagem"
 Sub AtualizaCaixaListagemRecibos()
 
-Dim AbaOrçamento As Object
+Dim AbaOrÃ§amento As Object
 Dim ultLinha As Long
 
 
-Set AbaOrçamento = Sheets("RECIBOS1")
+Set AbaOrÃ§amento = Sheets("RECIBOS1")
 
-ultLinha = AbaOrçamento.Range("A10000").End(xlUp)
+ultLinha = AbaOrÃ§amento.Range("A10000").End(xlUp)
 
 
 BlocodeAbas.ListBoxRecibos.ColumnCount = 6
 BlocodeAbas.ListBoxRecibos.ColumnHeads = True
 BlocodeAbas.ListBoxRecibos.ColumnWidths = "65;107.74;107;80;107.74;107.74;"
 BlocodeAbas.ListBoxRecibos.RowSource = "RECIBOS1!A2:F" & ultLinha
-
-
-
 
 End Sub
 
