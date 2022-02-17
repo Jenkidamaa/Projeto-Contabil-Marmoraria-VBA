@@ -21,8 +21,6 @@ Sub AtualizaCaixaListagemCaixa()
 
 Dim AbaCAIXA As Object
 Dim ultLinha As Long
-
-
 Set AbaCAIXA = Sheets("CAIXA")
 
 ultLinha = AbaCAIXA.Range("A10000").End(xlUp)
