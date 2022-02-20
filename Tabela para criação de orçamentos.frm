@@ -1,7 +1,3 @@
-
-
-
-
 Private Sub acabamento_Change()
         
 If acabamento.Value = "Meia Esquadria" Then
