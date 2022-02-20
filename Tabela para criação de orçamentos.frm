@@ -8,8 +8,6 @@ If acabamento.Value = "Meia Esquadria" Then
 ElseIf acabamento.Value = "Meia Esquadria Importados" Then
     vm = " "
     vm = Int(120)
-    
-         
 End If
         
         
