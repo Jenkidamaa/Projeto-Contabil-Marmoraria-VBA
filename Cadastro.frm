@@ -10,8 +10,6 @@ Private Sub btnadd_Click()
         
         Dim X As Integer
         X = Cells(Rows.Count, 4).End(xlUp).Row
-        
-    
         'adicionar os dados na tabela
         Worksheets("CADASTRO").Cells(X + 1, 2) = cd_cliente
         Worksheets("CADASTRO").Cells(X + 1, 3) = nome
